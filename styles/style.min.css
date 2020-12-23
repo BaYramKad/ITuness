@@ -12,10 +12,10 @@ html {
 
 body {
     min-height: 100vh;
-    background: #2b2525;
+    background: #ffffff;
     font-family: Arial, sans-serif;
     font-size: 16px;
-    color: #eceef0
+    color: #000000
 }
 
 button,
@@ -113,7 +113,7 @@ main {
     line-height: 2;
     margin: 0;
     cursor: pointer;
-    border-bottom: 2px solid #000
+    border-bottom: 2px solid #ff0020
 }
 
 @media (max-width: 650px) {
@@ -360,9 +360,21 @@ main {
     background-color: transparent;
     border: none;
     font-size: 56px;
-    color: #fff
+    color: #fff;
+    outline: none;
 }
 
+.video-icon {
+    margin: 0 10px;
+}
+
+.video-volume {
+    max-width: 100px;
+}
+.video_full-screen {
+    cursor: pointer;
+    padding-right: 20px;
+}
 .radio-stop:disabled {
     color: #aaa;
     opacity: .3
