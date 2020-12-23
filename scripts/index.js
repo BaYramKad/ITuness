@@ -8,7 +8,6 @@ const playerBtn = document.querySelectorAll(".player-btn"),
     playerBlock = document.querySelectorAll(".player-block"),
     temp = document.querySelector(".temp");
 
-
 const diActivationPlayer = () => {
     temp.style.display = "none";
     playerBtn.forEach(elem => elem.classList.remove("active"));
