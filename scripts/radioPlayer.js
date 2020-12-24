@@ -52,5 +52,5 @@ export const radioPlayerInit = () => {
             audio.pause();
         }
         changeIconPlay();
-    }); 
+    });
 };

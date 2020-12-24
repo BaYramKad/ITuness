@@ -8,14 +8,14 @@ const playerBtn = document.querySelectorAll(".player-btn"),
     playerBlock = document.querySelectorAll(".player-block"),
     temp = document.querySelector(".temp");
 
-const diActivationPlayer = () => {
+const diActivationPlayer = (n) => {
     temp.style.display = "none";
     playerBtn.forEach(elem => elem.classList.remove("active"));
     playerBlock.forEach(elem => elem.classList.remove("active"));
 };
 
 playerBtn.forEach((elem, i) => elem.addEventListener("click", () => {
-    diActivationPlayer();
+    diActivationPlayer(elem);
     elem.classList.add("active");
     playerBlock[i].classList.add("active");
 }));

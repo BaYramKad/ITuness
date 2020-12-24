@@ -11,7 +11,6 @@ export const videoPlayerInit = () => {
         videoVolume = document.querySelector(".video-volume");
 
     const toggleIcon = () => {
-
         if (videoPlayer.paused) {
             videoButtonPlay.classList.remove("fa-pause");
             videoButtonPlay.classList.add("fa-play");
@@ -32,7 +31,7 @@ export const videoPlayerInit = () => {
     const stopPlayer = () => {
         videoPlayer.pause();
         videoPlayer.currentTime = 0;
-        toggleIcon()
+        toggleIcon();
     };
 
     const addZero = n => n < 10 ? `0${n}` : n;
